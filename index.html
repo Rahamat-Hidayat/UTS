@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><a href=''>STEAK & SHAKE</a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#transaksi">Transaksi</a></li>
+                        <li><a href="#tambah foto">Tambah Foto</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+        <div class="werapper">
+            <section id="home">
+                <center>
+                <img src="https://cdn-2.tstatic.net/makassar/foto/bank/images/waroeng-steak-and-shake-dari-jl-cendrawasih-pindah-ke-jl-kasuari-kota-makassar.jpg"/>
+                </center>
+                <idv class="kolom">
+                    <h2>Warung STEAK & SHAKE</h2>
+                    <p>Pada awalnya, usaha ini didirikan di teras rumah kontrakan oleh Jody Brotosuseno (@JodyWaroeng) 
+                        dan istrinya Siti Hariyani (@Anieksiti) di Jalan Cenderawasih no. 30 Yogyakarta. Usaha ini tidak 
+                        terlepas dari pengaruh ayah Jody. Sebelum mempunyai usaha sendiri, mereka berdua telah aktif membantu 
+                        usaha ayah Jody yang memang telah lebih dulu berkecimpung di dunia bisnis restoran steak bernama Obonk Steak. 
+                        Obonk Steak memang sudah cukup lama berdiri di Yogyakarta dan sasaran konsumen restoran ini adalah kelas 
+                        menengah ke atas. Dari sinilah, Aniek (nama panggilan Siti Haryani) dan Jody mempunyai ide untuk membuka 
+                        tempat makan steak yang dapat menyentuh lapisan menengah ke bawah.<br><br>
+
+                        Mereka kemudian memilih nama Waroeng sebagai nama tempat yang mereka dirikan bukan restoran atau kafe yang nampak mewah. 
+                        Hal ini dimaksudkan agar dapat menarik minat mahasiswa. Mereka juga tak segan memasang daftar harga di depan Waroeng agar 
+                        calon pembeli dapat mengetahui harga menu mereka yang murah. Uniknya, Waroeng Steak & Shake menyediakan nasi 
+                        untuk dimakan dengan steak (bukan kentang, kacang panjang, wortel, atau jenis makanan lain yang biasa dimakan 
+                        bersama steak. Sampai saati ini outlet Waroeng Steak and Shake berkembang menjadi 80an outlet di seluruh Indonesia 
+                        dari Medan sampai Makassar.<br><br></p>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="transaksi">
+            <h1>TRANSAKSI</h1>
+            <form enctype="multipart/form-data" action="transaksi.php" method="get">
+                <tabel>
+                    <tr><td>Nama Pelanggan &nbsp;</td><td><input type="text" name="nama"></td><br><br></tr>
+                    <tr><td>Status Pembeli &nbsp;</td><td><select name="pembeli">
+                        <option value="++">Pilih</option>
+                        <option value="member">Member</option>
+                        <option value="non-member">Non-Member</option>
+                    </select></td><br><br></tr>
+                    <tr><td>Menu &nbsp;</td><td><select name="menu">
+                        <option value="++">Pilih</option>
+                        <option value="paket1">Paket 1</option>
+                        <option value="paket2">Paket 2</option>
+                        <option value="paket3">Paket 3</option>
+                    </select></td><br><br></tr>
+                    <tr><td>Jumlah &nbsp;</td><td><input type="number" name="jumlah"></td></tr>
+                    <tr><br><br><td><input type="submit" name="hitung" value="HITUNG"><br></td></tr>
+                </tabel>
+            </form>
+            </section><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section id="tambah foto"> 
+                <h1>Menambah Foto Menu</h1>
+                <form enctype = "multipart/form-data" action = "menuFoto.php" method = "POST">
+                    Foto Menu:
+                    <input name = "uploadedfile" type = "file"><br>
+                    <input type = "submit" value = "Upload Foto">
+                </form>
+            </section>
+            <div class="footer">
+                <center>
+                    <h3>kuliner steak and Shake</h3>
+                </center>
+            </div>
+    </body>
+</html>
